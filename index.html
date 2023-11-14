@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+ <div class="app">
+    <h1 class="header">
+        Expense tracker
+    </h1>
+    <div class="statuses">
+        <div class="status income">
+            <div class="title">Income</div>
+            <div class="price" id="income">R1700</div>
+        </div>
+        <div class="status expense">
+            <div class="title">Expense </div>
+            <div class="price" id="expense">R1700</div>
+        </div>
+        <div class="status balance">
+            <div class="title">Balance</div>
+            <div class="price" id="balance">R1700</div>
+        </div>
+    </div>
+
+    <select id="transactionType">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+
+    <input type="text" placeholder="Details" id="transactionDetail">
+
+    <input type="number" placeholder="Amount" id="transactionAmount">
+    <button onclick="addTransaction()">ADD TRANSACTION</button>
+
+
+    <div class="transactions" id="transactions">
+        <div class="transaction expense-t">
+            <div class="detail">Salary</div>
+            <div class="amount">R78900</div>
+            <div class="delete">
+               <button>X</button>
+            </div>
+        </div>
+    </div>
+
+ </div>   
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
